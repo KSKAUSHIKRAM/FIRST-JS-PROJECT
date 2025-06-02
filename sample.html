@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>Tic Tac Toe</title>
+    <script defer src = "script.js"></script>
+    <style>
+        .f{
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            height:50vh;
+            margin:0;
+        } 
+        .container{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+            column-gap:10px;
+            row-gap: 10px;
+            max-width:460px;
+            padding-left: 20px;
+        }
+        .cells{
+            height:100px;
+            width:100px;
+            background-color: green;
+            grid-template-columns: repeat(3, 100px);
+            grid-gap: 10px;
+        }
+        .X{
+            background-image: url("X.png") ;
+            background-size: contain;
+        }
+        .O{
+            background-image: url("O.png");
+            background-size: contain;
+        }
+        h2{
+           text-align: center;
+        }
+
+        body{
+            background-color: darkblue;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Player 1:O</h1><br>
+    <!--<button id="mybutton" value="X">X</button>
+    <button id="mybutton" value="O">O</button>-->
+    <h1>Player 2:X</h1>
+    <h2>turn of:</h2>
+<div class="f">
+    
+    <div class="container">
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+        <div class="cells"></div>
+
+    </div>
+</body>
+</html>
